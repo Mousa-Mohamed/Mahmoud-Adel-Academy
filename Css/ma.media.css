@@ -1,0 +1,427 @@
+@media (min-width: 750px) and (max-width: 1100px) {
+    li {
+        font-size: 15px;
+        padding: 5px;
+    }
+    h4 {
+        font-size: larger;
+        margin-bottom:5px;
+    }
+    h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+        width: 90%;
+        line-height: 40px;
+    }
+    header .logo {
+        grid-column: 2/5;
+        font-size: medium;
+    }
+    header .menu {
+        grid-column: 5/9;
+        margin-left: 40px;
+    }
+    .head-container {
+        grid-template-rows: 70vh;
+    }
+    .about-container .about {
+        grid-template-columns: 5% 90% 5% ;
+        grid-template-rows: 10% 70% 15vh ;
+    }
+    .about-container .about-details .about-title {
+        margin-bottom: 45px;
+    }
+    .about-container .about-para {
+        width: 90%;
+        margin-bottom: 15px;
+        line-height: 25px;
+        color: rgb(77, 76, 76);
+    }
+    .about-container .about-contact i {
+        padding: 10px;
+        font-size: large;
+        margin-right: 10px;
+    }
+    .about-container .about-contact span {
+        font-size: large;
+        margin-bottom: 0;
+    }
+    .about-container .about-contact p {
+        font-size: larger;
+    }
+    .about-container .right-about{
+        width:200% ;
+        height: 105%;
+    }
+    .about-container .right-about img {
+        width: 100%;
+        height: 100%;
+    }
+    .service-container .service {
+        grid-template-columns: 5% 90% 5% ;
+        grid-template-rows: 10% 30% 53vh ;
+    }
+    .service-container .service-title ::before {
+        top: 70%;
+    }
+    .service-container .service-title h2 {
+        width: 85%;
+    }
+    .service-container .service-cards {
+        gap: 15px;
+    }
+    .service-container .service-cards .card {
+        height: 60%;
+    }
+    .service-container .service-cards i {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .service-container .service-cards h5 {
+        font-size: larger;
+        margin-bottom: 15px;
+    }
+    .service-container .service-cards .card :nth-child(3) {
+        width: 100%;
+        line-height: 22px;
+    }
+    .pricing-container .pricing {
+        grid-template-columns: 5% 90% 5% ;
+        grid-template-rows: 10% 30% 63vh ;
+    }
+    .pricing-container .pricing-title h2 {
+        width: 65%;
+    }
+    .pricing-container .pricing-cards .cards {
+        height: 55%;
+    }
+    .pricing-container .pricing-cards .top-card h6 {
+        font-size: larger;
+    }
+    .pricing-container .pricing-cards .top-card p {
+        font-size: small;
+    }
+    .pricing-container .pricing-cards .middle-card >:nth-child(1) {
+        font-size: x-large;
+    }
+    .request-container .request {
+        grid-template-columns: 5% 90% 5% ;
+        grid-template-rows: 10% 70% 15vh ;
+    }
+    .request-container .request-title {
+        margin-bottom: 30px;
+    }
+    .request-container .request-details .request-para {
+        width: 80%;
+        margin-bottom: 15px;
+        line-height: 25px;
+    }
+    .request-container .request-contact i {
+        padding: 10px;
+        font-size: large;
+        margin-right: 10px;
+    }
+    .request-container .request-contact span {
+        font-size: large;
+        margin-bottom: 0;
+    }
+    .request-container .request-contact p {
+        font-size: larger;
+    }
+    .request-container .request-details .right-request {
+        height: 110%;
+        padding: 30px 30px;
+        gap: 30px;
+    }
+    .request-container .request-details input {
+        font-size: medium;
+    }
+    .request-container .request-details button {
+        font-size: medium;
+    }
+    .request-container .request-details button a {
+        padding: 21px 40px;
+    }
+    .latest-container .latest {
+        grid-template-columns: 5% 90% 5% ;
+        grid-template-rows: 10% 30% 10vh ;
+    }
+    .latest-container .latest-title {
+        margin-bottom: 30px;
+    }
+    .latest-container .latest-title ::before {
+        left: 42.5%;
+    }
+    .latest-container .latest-title h2 {
+        width: 60%;
+    }
+    .latest-container .latest-img img {
+        width: 19%;
+        border-radius: 50%;
+        padding: 30px;
+    }
+    .foot-container .foot-details {
+        grid-template-columns: 5% 90% 15% ;
+        grid-template-rows: 15% 70% 3vh ;
+    }
+    .foot-container .contact-info div {
+        font-size: medium;
+    }
+    .foot-container .contact-icons i {
+        font-size: larger;
+    }
+}
+@media (min-width: 350px) and (max-width: 750px) {
+    header nav .bars {
+        font-size: xx-large;
+        color: rgb(242,234,219);
+        cursor: pointer;
+        display: inline-flex;
+    }
+    header nav .bars .fa-x {
+        display: none;
+    }
+    header .menu {
+        position: absolute;
+        top: 100%;
+        right: -120%;
+        width: 120%;
+        height: 50vh;
+        border-radius: 5px 0 5px 5px;
+        box-shadow: 20px 10px 50px 0px ;
+        transition: 0.3s ease-in-out;
+        background-color: rgb(66,66,214);
+    }
+    #check:checked~.bars .fa-bars {
+        display: none;
+    }
+    #check:checked~.bars .fa-x {
+        display: block;
+    }
+    #check:checked~.menu{
+        right: 0;
+    }
+    a {
+        padding: 10px;
+    }
+    li {
+        display: block;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    h4 {
+        font-size: larger;
+        margin-bottom:5px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 25px;
+        margin-bottom: 0;
+        width: 100%;
+        line-height: 35px;
+        text-align: center;
+    }
+    header .logo {
+        grid-column: 1/9;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+    .head-container {
+        grid-template-rows: 60vh;
+    }
+    .about-container .about {
+        grid-template-columns: 5% 90% 5% ;
+        grid-template-rows: 5% 70% 5vh ;
+    }
+    .about-container .about-details {
+        flex-direction: column;
+    }
+    .about-container .about-details .about-title {
+        margin-bottom: 35px;
+    }
+    .about-container .about-para {
+        width: 100%;
+        margin-bottom: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .about-container .about-contact {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .about-container .about-contact i {
+        padding: 10px;
+        font-size: large;
+        margin-right: 10px;
+    }
+    .about-container .about-contact span {
+        font-size: large;
+        margin-bottom: 0;
+    }
+    .about-container .about-contact p {
+        font-size: larger;
+    }
+    .about-container .right-about{
+        width:100% ;
+        height: 100%;
+        overflow: unset;
+    }
+    .about-container .right-about img {
+        width: 100%;
+    }
+    .about-container .about-details .about-title ::before {
+        content: "";
+        position: absolute;
+        height: 5px;
+        background-color:  rgb(66,66,214);
+        width: 20%;
+        top: 110%;
+        left: 40%;
+        border-radius: 25px;
+    }
+    .service-container .service {
+        grid-template-columns: 5% 90% 5% ;
+        grid-template-rows: 5% 10% 120vh ;
+    }
+    .service-container .service-title ::before {
+        top: 120%;
+    }
+    .service-container .service-title h2 {
+        width: 100%;
+    }
+    .service-container .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-container .service-cards .card {
+        height: 25%;
+        width: 100%;
+    }
+    .service-container .service-cards i {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .service-container .service-cards h5 {
+        font-size: larger;
+        margin-bottom: 15px;
+    }
+    .service-container .service-cards .card :nth-child(3) {
+        width: 100%;
+        line-height: 22px;
+    }
+    .pricing-container .pricing {
+        grid-template-columns: 5% 90% 5% ;
+        grid-template-rows: 5% 10% 130vh ;
+    }
+    .pricing-container .pricing-title h2 {
+        width: 100%;
+    }
+    .pricing-container .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+    }
+    .pricing-container .pricing-cards .cards {
+        height: 25%;
+        width: 100%;
+    }
+    .pricing-container .pricing-cards .top-card h6 {
+        font-size: larger;
+    }
+    .pricing-container .pricing-cards .top-card p {
+        font-size: small;
+    }
+    .pricing-container .pricing-cards .middle-card >:nth-child(1) {
+        font-size: x-large;
+    }
+    .pricing-container .pricing-title ::before {
+        top: 120%;
+        left: 40%;
+    }
+    .request-container .request {
+        grid-template-columns: 5% 90% 5% ;
+        grid-template-rows: 5% 10% 10vh ;
+    }
+    .request-container .request-title {
+        margin-bottom: 30px;
+    }
+    .request-container .request-details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .request-container .request-details .request-para {
+        width: 100%;
+        margin-bottom: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+    .request-container .request-contact {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .request-container .request-contact i {
+        padding: 10px;
+        font-size: large;
+        margin-right: 10px;
+    }
+    .request-container .request-contact span {
+        font-size: large;
+        margin-bottom: 0;
+    }
+    .request-container .request-contact p {
+        font-size: larger;
+    }
+    .request-container .request-details .right-request {
+        width: 100%;
+        height: 500%;
+        padding: 20px 20px;
+        gap: 20px;
+    }
+    .request-container .request-details input {
+        font-size: medium;
+    }
+    .request-container .request-details button {
+        font-size: medium;
+    }
+    .request-container .request-details button a {
+        padding: 21px 40px;
+    }
+    .request-container .request-title ::before {
+        left: 40%;
+    }
+    .latest-container .latest {
+        grid-template-columns: 5% 90% 5% ;
+        grid-template-rows: 3% 30% 20vh ;
+    }
+    .latest-container .latest-title {
+        margin-bottom: 30px;
+    }
+    .latest-container .latest-title ::before {
+        left: 42.5%;
+    }
+    .latest-container .latest-title h2 {
+        width: 100%;
+    }
+    .latest-container .latest-img img {
+        width: 100%;
+        border-radius: 50%;
+        padding: 30px;
+    }
+    .foot-container .foot-details {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .foot-container .contact-info div {
+        font-size: medium;
+        text-align: center;
+    }
+    .foot-container .contact-icons i {
+        font-size: larger;
+    }
+    .foot-container .contact-info {
+        margin-bottom: 20px;
+    }
+}
