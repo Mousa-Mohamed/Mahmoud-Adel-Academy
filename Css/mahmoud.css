@@ -7,20 +7,19 @@
 a {
     text-decoration: none;
     padding: 20px;
-    color: rgb(242,234,219);
 }
 li {
     list-style-type: none;
     display: inline-block;
     font-size: larger;
-    color: rgb(242,234,219);
     padding: 20px;
+    color: rgb(173, 171, 171);
 }
 button {
     border: none;
 }
 h4 {
-    color:rgb(66,66,214) ;
+    color:rgb(46, 46, 228) ;
     font-size: x-large;
     margin-bottom:10px;
 }
@@ -31,17 +30,18 @@ h2 {
     line-height: 55px;
 }
 header nav {
-    background-color: rgb(66,66,214);
+    color: rgb(173, 171, 171);
+    background-color: rgba(0,0,0,.1);
+    backdrop-filter:blur(50px) ;
     display: grid;
-    grid-template-columns: repeat(7,10%);
+    grid-template-columns: repeat(20,5%);
     grid-template-rows:1fr;
     grid-column: 1/2;
     grid-row: 1/2;
-    position: fixed;
-    top: 0;
-    right: 0;
     width: 100%;
     z-index: 999;
+    position: fixed;
+    top: 0;
 }
 header nav .menu ul a {
     padding: 0;
@@ -51,23 +51,25 @@ header nav .menu ul a :hover {
     transition: 0.5s;
 }
 header .logo {
-    grid-column: 2/4;
-    color: rgb(242,234,219);
+    grid-column: 4/8;
+    font-size: large;
     display: flex;
     align-items: center;
-    font-size: large;
+}
+header .logo span {
+    font-size: 1.3em;
+    color: rgb(111, 111, 238);
 }
 header .logo .img-logo {
     width: 20%;
 }
 header .menu {
-    grid-column: 6/9;
-    grid-row: 1/4;
+    grid-column: 12/20;
     align-self: center;
-    margin-left: 15px;
+    margin-left: -35px;
 }
 header .logo img {
-    width:80%;
+    width:90%;
     border-radius: 50%;
     margin-top: 5px;
 }
@@ -81,6 +83,45 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100vh;
+    position: relative;
+}
+.head-container .head-title {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: rgb(233, 233, 233);
+    width: 45%;
+}
+.head-container .head-title button {
+    width: 100%;
+    background: none;
+    position: relative;
+}
+.head-container .head-title button a {
+    position: absolute;
+    margin-top: 2%;
+    left: 40%;
+    padding: 20px 40px;
+    background-color: white;
+    color:rgb(46, 46, 228) ;
+    font-size: large;
+}
+.head-container .head-title button  :hover {
+    background-color: rgb(13, 13, 235);
+    transition: 0.5s;
+    color: white;
+}
+.head-container .head-title h1 {
+    text-align: center;
+    font-size: 4em;
+    line-height: 90px;
+}
+.head-container .head-title span {
+    color: rgb(46, 46, 228);
+}
+.head-container .head-title .new-span {
+    font-size: 0.7em;
+    color:white;
 }
 .head-container .image {
     grid-column: 1/2;
@@ -89,6 +130,53 @@ header {
 .head-container img {
     width: 100%;
     height: 100%;
+}
+.head-container .abs {
+    display: flex;
+    width: 70%;
+    position: absolute;
+    top: 90%;
+    left: 15%;
+    border: 1px solid rgb(238, 234, 234);
+}
+.head-container .abs .right-div {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    width: 60%;
+}
+.head-container .abs .right-div .left {
+    padding: 30px;
+    border-right: 1px solid rgb(207, 203, 203);
+    height: 100%;
+    width: 90%;
+}
+.head-container .abs .right-div .right {
+    padding: 30px;
+    height: 100%;
+    width: 90%;
+}
+.head-container .abs .right-div h6 {
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+.head-container .abs .right-div p {
+    color: rgb(99, 99, 99);
+    width: 60%;
+    line-height: 30px;
+}
+.head-container .abs .left-div {
+    padding: 30px;
+    background-color:rgb(238,243,255) ;
+}
+.head-container .abs .left-div h2 {
+    font-size: xx-large;
+    margin: 10px 0;
+}
+.head-container .abs .left-div p {
+    color: rgb(73, 73, 73);
+    line-height: 25px;
+    width: 70%;
 }
 .about-container {
     display: grid;
@@ -106,6 +194,8 @@ header {
     grid-column: 2/3;
     grid-row: 2/3;
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .about-container .about-details .about-title {
     margin-bottom: 80px;
@@ -115,55 +205,31 @@ header {
     content: "";
     position: absolute;
     height: 5px;
-    background-color:  rgb(66,66,214);
+    background-color:  rgb(46, 46, 228);
     width: 20%;
     top: 110%;
     left: 0;
     border-radius: 25px;
 }
 .about-container .about-para {
-    width: 80%;
     margin-bottom: 30px;
     font-size: 17px;
     line-height: 31px;
     color: rgb(77, 76, 76);
 }
-.about-container .about-contact {
-    display: flex;
-}
-.about-container .about-contact .call-icon :hover {
-    color: rgb(14, 14, 80);
-    cursor: pointer;
-    transition: 0.5s;
-}
-.about-container .about-contact i {
-    padding: 15px;
-    font-size: x-large;
-    color:rgb(242,234,219);
-    background-color: rgb(66,66,214) ;
-    margin-right: 20px;
-}
-.about-container .about-contact span {
-    font-size: larger;
-    display: inline-block;
-    margin-bottom: 3px;
-    font-weight: 600;
-    color: rgb(54, 54, 54);
-}
-.about-container .about-contact p {
-    font-size: x-large;
-    color:  rgb(66,66,214);
-    font-weight: 600;
-}
 .about-container .right-about{
-    width:160% ;
+    width:55% ;
+}
+.about-container .left-about{
+    width:40% ;
+    height: 70%;
     overflow: hidden;
 }
-.about-container .right-about img {
+.about-container .left-about img {
     width: 100%;
-    height: 74%;
+    height: 100%;
 }
-.about-container .right-about :hover {
+.about-container .left-about :hover {
     transform: scale(1.5);
     transition: all 1s ease;
 }
@@ -171,7 +237,7 @@ header {
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows:1fr ;
-    background-color: rgb(242,234,219);
+    background-color: rgb(238,243,255);
 }
 .service-container .service {
     grid-column: 1/2;
@@ -192,7 +258,7 @@ header {
     content: "";
     position: absolute;
     height: 5px;
-    background-color:  rgb(66,66,214);
+    background-color:  rgb(46, 46, 228);
     width: 20%;
     top: 60%;
     left: 40%;
@@ -210,7 +276,7 @@ header {
     gap: 25px;
 }
 .service-container .service-cards .card {
-    background-color: rgb(227, 227, 233);
+    background-color: rgb(215, 220, 230);
     width: 32%;
     border-radius: 10px;
     height: 50%;
@@ -223,7 +289,7 @@ header {
 .service-container .service-cards i {
     font-size: 35px;
     color:rgb(242,234,219) ;
-    background-color:rgb(66,66,214) ;
+    background-color:rgb(46, 46, 228) ;
     padding: 10px;
     margin-bottom: 30px;
 }
@@ -259,7 +325,7 @@ header {
     content: "";
     position: absolute;
     height: 5px;
-    background-color: rgb(66,66,214);
+    background-color: rgb(46, 46, 228);
     width: 20%;
     top: 70%;
     left: 40%;
@@ -273,32 +339,28 @@ header {
     grid-column:2/3 ;
     grid-row:3/4 ;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .pricing-container .pricing-cards .bottom-card :hover {
     transform: scale(1.3);
     transition: 1s;
 }
 .pricing-container .pricing-cards .cards {
-    background-color: rgb(239, 239, 243);
-    width: 33.5%;
+    background-color: rgb(215, 220, 230);
+    width: 30%;
     border-radius: 2px;
-    height: 50%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-.pricing-container .pricing-cards .card-middle {
-    background-color: white;
-    box-shadow: 0px 1px 5px 0px;
 }
 .pricing-container .pricing-cards .top-card {
     border-bottom: 1px solid rgb(175, 174, 174);
 }
 .pricing-container .pricing-cards .top-card h6 {
     font-size: x-large;
-    padding:0 40px;
-    color: rgb(66,66,214);
+    padding:0 40px 20px ;
+    color: rgb(46, 46, 228);
 }
 .pricing-container .pricing-cards .top-card p {
     padding: 10px 40px;
@@ -321,11 +383,14 @@ header {
     padding: 10px;
     background-color: rgb(66,66,214);
 }
+.pricing-container .pricing-cards .bottom-card button a {
+    color: white;
+}
 .request-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    background-color:rgb(242,234,219) ;
+    background-color:rgb(238,243,255) ;
 }
 .request-container .request {
     grid-column: 1/2;
@@ -347,7 +412,7 @@ header {
     content: "";
     position: absolute;
     height: 5px;
-    background-color:  rgb(66,66,214);
+    background-color:  rgb(46, 46, 228);
     width: 20%;
     top: 110%;
     left: 0;
@@ -367,7 +432,7 @@ header {
     padding: 15px;
     font-size: x-large;
     color:rgb(242,234,219) ;
-    background-color: rgb(66,66,214) ;
+    background-color: rgb(46, 46, 228) ;
     margin-right: 20px;
 }
 .request-container .request-contact .call-icon :hover {
@@ -384,12 +449,12 @@ header {
 }
 .request-container .request-contact p {
     font-size: x-large;
-    color:  rgb(66,66,214);
+    color:  rgb(46, 46, 228);
     font-weight: 600;
 }
 .request-container .request-details .right-request {
-    background-color: rgb(66,66,214);
-    width: 60%;
+    background-color: rgb(46, 46, 228);
+    width: 100%;
     height: 75%;
     border-radius: 5px;
     padding: 50px 50px;
@@ -408,11 +473,12 @@ header {
     font-size: large;
 }
 .request-container .request-details button a {
-    padding: 21px 144px;
+    padding: 21px 100px;
+    color: white;
 }
 .request-container .request-details button :hover {
     transform: scale(1.2);
-    background-color: rgb(242,234,219);
+    background-color: rgb(215,220,230);
     color:rgb(20, 20, 71) ;
     transition: 1s;
 }
@@ -443,7 +509,7 @@ header {
     content: "";
     position: absolute;
     height: 5px;
-    background-color:  rgb(66,66,214);
+    background-color:  rgb(46, 46, 228);
     width: 15%;
     top: 110%;
     left: 43%;
@@ -466,7 +532,7 @@ header {
     padding: 30px;
 }
 footer {
-    background-color: rgb(66,66,214);
+    background-color: rgb(46, 46, 228);
     color: rgb(242,234,219);
 }
 .foot-container {
@@ -512,6 +578,7 @@ footer {
 }
 .foot-container .contact-icons a {
     padding: 5px;
+    color: white;
 }
 header nav .bars {
     position: absolute;
