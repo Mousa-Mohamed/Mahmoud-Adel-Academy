@@ -19,7 +19,7 @@ button {
     border: none;
 }
 h4 {
-    color:rgb(46, 46, 228) ;
+    color:rgb(80, 160, 210) ;
     font-size: x-large;
     margin-bottom:10px;
 }
@@ -47,7 +47,7 @@ header nav .menu ul a {
     padding: 0;
 }
 header nav .menu ul a :hover {
-    color:rgb(14, 14, 80) ;
+    color:rgb(50, 145, 200) ;
     transition: 0.5s;
 }
 header .logo {
@@ -58,7 +58,7 @@ header .logo {
 }
 header .logo span {
     font-size: 1.3em;
-    color: rgb(46, 46, 228);
+    color: rgb(50, 145, 200);
 }
 header .logo .img-logo {
     width: 20%;
@@ -74,7 +74,6 @@ header .logo img {
     margin-top: 5px;
 }
 header {
-    border: 1px solid gray;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -87,10 +86,9 @@ header {
 }
 .head-container .head-title {
     position: absolute;
-    top: 40%;
-    left: 30%;
-    color: rgb(233, 233, 233);
-    width: 45%;
+    top: 35%;
+    left: 15%;
+    width: 30%;
 }
 .head-container .head-title button {
     width: 100%;
@@ -100,28 +98,23 @@ header {
 .head-container .head-title button a {
     position: absolute;
     margin-top: 2%;
-    left: 40%;
+    left: 0;
     padding: 20px 40px;
     background-color: white;
-    color:rgb(46, 46, 228) ;
+    color:rgb(50, 145, 200) ;
     font-size: large;
+    border-radius: 5px;
 }
 .head-container .head-title button  :hover {
-    background-color: rgb(13, 13, 235);
+    background-color: rgb(50, 145, 200);
     transition: 0.5s;
     color: white;
 }
 .head-container .head-title h1 {
-    text-align: center;
     font-size: 4em;
     line-height: 90px;
-}
-.head-container .head-title span {
-    color: rgb(46, 46, 228);
-}
-.head-container .head-title .new-span {
-    font-size: 0.7em;
-    color:white;
+    font-weight: 600;
+    color: white;
 }
 .head-container .image {
     grid-column: 1/2;
@@ -130,53 +123,6 @@ header {
 .head-container img {
     width: 100%;
     height: 100%;
-}
-.head-container .abs {
-    display: flex;
-    width: 70%;
-    position: absolute;
-    top: 90%;
-    left: 15%;
-    border: 1px solid rgb(238, 234, 234);
-}
-.head-container .abs .right-div {
-    display: flex;
-    background-color: white;
-    align-items: center;
-    width: 60%;
-}
-.head-container .abs .right-div .left {
-    padding: 30px;
-    border-right: 1px solid rgb(207, 203, 203);
-    height: 100%;
-    width: 90%;
-}
-.head-container .abs .right-div .right {
-    padding: 30px;
-    height: 100%;
-    width: 90%;
-}
-.head-container .abs .right-div h6 {
-    font-size: xx-large;
-    margin-bottom: 20px;
-}
-.head-container .abs .right-div p {
-    color: rgb(99, 99, 99);
-    width: 60%;
-    line-height: 30px;
-}
-.head-container .abs .left-div {
-    padding: 30px;
-    background-color:rgb(238,243,255) ;
-}
-.head-container .abs .left-div h2 {
-    font-size: xx-large;
-    margin: 10px 0;
-}
-.head-container .abs .left-div p {
-    color: rgb(73, 73, 73);
-    line-height: 25px;
-    width: 70%;
 }
 .about-container {
     display: grid;
@@ -205,7 +151,7 @@ header {
     content: "";
     position: absolute;
     height: 5px;
-    background-color:  rgb(46, 46, 228);
+    background-color:  rgb(50, 145, 200);
     width: 20%;
     top: 110%;
     left: 0;
@@ -258,7 +204,7 @@ header {
     content: "";
     position: absolute;
     height: 5px;
-    background-color:  rgb(46, 46, 228);
+    background-color:  rgb(50, 145, 200);
     width: 20%;
     top: 60%;
     left: 40%;
@@ -277,7 +223,7 @@ header {
 }
 .service-container .service-cards .card {
     background-color: rgb(215, 220, 230);
-    width: 32%;
+    width: 31%;
     border-radius: 10px;
     height: 50%;
     display: flex;
@@ -289,7 +235,7 @@ header {
 .service-container .service-cards i {
     font-size: 35px;
     color:rgb(242,234,219) ;
-    background-color:rgb(46, 46, 228) ;
+    background-color:rgb(50, 145, 200) ;
     padding: 10px;
     margin-bottom: 30px;
 }
@@ -325,7 +271,7 @@ header {
     content: "";
     position: absolute;
     height: 5px;
-    background-color: rgb(46, 46, 228);
+    background-color:rgb(50, 145, 200);
     width: 20%;
     top: 70%;
     left: 40%;
@@ -360,7 +306,7 @@ header {
 .pricing-container .pricing-cards .top-card h6 {
     font-size: x-large;
     padding:0 40px 20px ;
-    color: rgb(46, 46, 228);
+    color: rgb(50, 145, 200);
 }
 .pricing-container .pricing-cards .top-card p {
     padding: 10px 40px;
@@ -381,7 +327,7 @@ header {
 }
 .pricing-container .pricing-cards .bottom-card button {
     padding: 10px;
-    background-color: rgb(66,66,214);
+    background-color: rgb(50, 145, 200);
 }
 .pricing-container .pricing-cards .bottom-card button a {
     color: white;
@@ -412,7 +358,7 @@ header {
     content: "";
     position: absolute;
     height: 5px;
-    background-color:  rgb(46, 46, 228);
+    background-color:  rgb(50, 145, 200);
     width: 20%;
     top: 110%;
     left: 0;
@@ -432,7 +378,7 @@ header {
     padding: 15px;
     font-size: x-large;
     color:rgb(242,234,219) ;
-    background-color: rgb(46, 46, 228) ;
+    background-color: rgb(50, 145, 200) ;
     margin-right: 20px;
 }
 .request-container .request-contact .call-icon :hover {
@@ -449,11 +395,11 @@ header {
 }
 .request-container .request-contact p {
     font-size: x-large;
-    color:  rgb(46, 46, 228);
+    color: rgb(50, 145, 200);
     font-weight: 600;
 }
 .request-container .request-details .right-request {
-    background-color: rgb(46, 46, 228);
+    background-color: rgb(50, 145, 200);
     width: 100%;
     height: 75%;
     border-radius: 5px;
@@ -469,7 +415,7 @@ header {
 }
 .request-container .request-details button {
     padding: 20px 0;
-    background-color: rgb(20, 20, 71);
+    background-color: rgb(4, 68, 105);
     font-size: large;
 }
 .request-container .request-details button a {
@@ -509,7 +455,7 @@ header {
     content: "";
     position: absolute;
     height: 5px;
-    background-color:  rgb(46, 46, 228);
+    background-color:  rgb(50, 145, 200);
     width: 15%;
     top: 110%;
     left: 43%;
@@ -532,7 +478,7 @@ header {
     padding: 30px;
 }
 footer {
-    background-color: rgb(46, 46, 228);
+    background-color: rgb(50, 145, 200);
     color: rgb(242,234,219);
 }
 .foot-container {
@@ -545,7 +491,7 @@ footer {
     grid-row: 1/2;
     display: grid;
     grid-template-columns: 15% 70% 15% ;
-    grid-template-rows: 15% 70% 5vh ;
+    grid-template-rows: 15% 70% 6.5vh ;
 }
 .foot-container .contact-info {
     grid-column:2/2 ;
@@ -559,8 +505,8 @@ footer {
     justify-self: end;
 }
 .foot-container .contact-icons a :hover {
-    background-color: rgb(242,234,219);
-    color:rgb(20, 20, 71) ;
+    background-color: rgb(173, 171, 171);
+    color:rgb(50, 145, 200) ;
     transition: 1s;
 }
 .foot-container .contact-info div {

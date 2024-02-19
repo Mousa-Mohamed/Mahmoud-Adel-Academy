@@ -13,16 +13,27 @@
         width: 90%;
         line-height: 40px;
     }
+    header nav {
+        grid-template-columns: repeat(22,6%);
+    }
     header .logo {
-        grid-column: 2/5;
+        grid-column: 2/7;
         font-size: medium;
     }
     header .menu {
-        grid-column: 5/9;
+        grid-column: 11/23;
         margin-left: 40px;
     }
     .head-container {
         grid-template-rows: 70vh;
+    }
+    .head-container .head-title {
+        top: 30%;
+        left: 5%;
+        width: 50%;
+    }
+    .head-container .head-title h1 {
+        font-size: 3.5em;
     }
     .about-container .about {
         grid-template-columns: 5% 90% 5% ;
@@ -33,27 +44,14 @@
     }
     .about-container .about-para {
         width: 90%;
-        margin-bottom: 15px;
-        line-height: 25px;
+        line-height: 24px;
         color: rgb(77, 76, 76);
     }
-    .about-container .about-contact i {
-        padding: 10px;
-        font-size: large;
-        margin-right: 10px;
+    .about-container .left-about{
+        width:40% ;
+        height: 100%;
     }
-    .about-container .about-contact span {
-        font-size: large;
-        margin-bottom: 0;
-    }
-    .about-container .about-contact p {
-        font-size: larger;
-    }
-    .about-container .right-about{
-        width:200% ;
-        height: 105%;
-    }
-    .about-container .right-about img {
+    .about-container .left-about img {
         width: 100%;
         height: 100%;
     }
@@ -62,10 +60,10 @@
         grid-template-rows: 10% 30% 53vh ;
     }
     .service-container .service-title ::before {
-        top: 70%;
+        top: 75%;
     }
     .service-container .service-title h2 {
-        width: 85%;
+        width: 50%;
     }
     .service-container .service-cards {
         gap: 15px;
@@ -82,7 +80,7 @@
         margin-bottom: 15px;
     }
     .service-container .service-cards .card :nth-child(3) {
-        width: 100%;
+        width: 90%;
         line-height: 22px;
     }
     .pricing-container .pricing {
@@ -90,7 +88,7 @@
         grid-template-rows: 10% 30% 63vh ;
     }
     .pricing-container .pricing-title h2 {
-        width: 65%;
+        width: 45%;
     }
     .pricing-container .pricing-cards .cards {
         height: 55%;
@@ -109,12 +107,12 @@
         grid-template-rows: 10% 70% 15vh ;
     }
     .request-container .request-title {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     .request-container .request-details .request-para {
         width: 80%;
         margin-bottom: 15px;
-        line-height: 25px;
+        line-height: 30px;
     }
     .request-container .request-contact i {
         padding: 10px;
@@ -141,6 +139,9 @@
     }
     .request-container .request-details button a {
         padding: 21px 40px;
+    }
+    .request-container .request-title h2 {
+        width: 60%;
     }
     .latest-container .latest {
         grid-template-columns: 5% 90% 5% ;
@@ -184,13 +185,13 @@
     header .menu {
         position: absolute;
         top: 100%;
-        right: -120%;
+        right: -133%;
         width: 120%;
         height: 50vh;
         border-radius: 5px 0 5px 5px;
         box-shadow: 20px 10px 50px 0px ;
         transition: 0.3s ease-in-out;
-        background-color: rgb(66,66,214);
+        background-color: rgb(50, 145, 200);
     }
     #check:checked~.bars .fa-bars {
         display: none;
@@ -199,7 +200,7 @@
         display: block;
     }
     #check:checked~.menu{
-        right: 0;
+        right: -13%;
     }
     a {
         padding: 10px;
@@ -223,15 +224,31 @@
         text-align: center;
     }
     header .logo {
-        grid-column: 1/9;
+        grid-column: 1/16;
         margin-left: 20px;
         font-size: 15px;
     }
     .head-container {
         grid-template-rows: 60vh;
     }
+    .head-container .head-title {
+        top: 37%;
+        left: 6%;
+        width: 90%;
+    }
+    .head-container .head-title h1 {
+        font-size: 3em;
+        line-height: 60px;
+        font-weight: 600;
+        text-align: center;
+    }    
+    .head-container .head-title button a {
+        left: 36%;
+        padding: 15px 30px;
+        font-size: small;
+    }
     .about-container .about {
-        grid-template-columns: 5% 90% 5% ;
+        grid-template-columns: 10% 80% 10% ;
         grid-template-rows: 5% 70% 5vh ;
     }
     .about-container .about-details {
@@ -244,44 +261,19 @@
         width: 100%;
         margin-bottom: 15px;
         line-height: 25px;
-        text-align: center;
-    }
-    .about-container .about-contact {
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-    .about-container .about-contact i {
-        padding: 10px;
-        font-size: large;
-        margin-right: 10px;
-    }
-    .about-container .about-contact span {
-        font-size: large;
-        margin-bottom: 0;
-    }
-    .about-container .about-contact p {
-        font-size: larger;
     }
     .about-container .right-about{
         width:100% ;
-        height: 100%;
-        overflow: unset;
     }
-    .about-container .right-about img {
-        width: 100%;
+    .about-container .left-about{
+        display: none;
     }
     .about-container .about-details .about-title ::before {
-        content: "";
-        position: absolute;
-        height: 5px;
-        background-color:  rgb(66,66,214);
-        width: 20%;
-        top: 110%;
-        left: 40%;
-        border-radius: 25px;
+        width: 30%;
+        left: 35%;
     }
     .service-container .service {
-        grid-template-columns: 5% 90% 5% ;
+        grid-template-columns: 10% 80% 10% ;
         grid-template-rows: 5% 10% 120vh ;
     }
     .service-container .service-title ::before {
@@ -311,8 +303,8 @@
         line-height: 22px;
     }
     .pricing-container .pricing {
-        grid-template-columns: 5% 90% 5% ;
-        grid-template-rows: 5% 10% 130vh ;
+        grid-template-columns: 10% 80% 10% ;
+        grid-template-rows: 4% 6% 130vh ;
     }
     .pricing-container .pricing-title h2 {
         width: 100%;
@@ -320,8 +312,6 @@
     .pricing-container .pricing-cards {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
-        
     }
     .pricing-container .pricing-cards .cards {
         height: 25%;
@@ -337,11 +327,11 @@
         font-size: x-large;
     }
     .pricing-container .pricing-title ::before {
-        top: 120%;
+        top: 140%;
         left: 40%;
     }
     .request-container .request {
-        grid-template-columns: 5% 90% 5% ;
+        grid-template-columns: 10% 80% 10% ;
         grid-template-rows: 5% 10% 10vh ;
     }
     .request-container .request-title {
@@ -355,23 +345,9 @@
         width: 100%;
         margin-bottom: 15px;
         line-height: 25px;
-        text-align: center;
     }
     .request-container .request-contact {
-        justify-content: center;
-        margin-bottom: 20px;
-    }
-    .request-container .request-contact i {
-        padding: 10px;
-        font-size: large;
-        margin-right: 10px;
-    }
-    .request-container .request-contact span {
-        font-size: large;
-        margin-bottom: 0;
-    }
-    .request-container .request-contact p {
-        font-size: larger;
+        display: none;
     }
     .request-container .request-details .right-request {
         width: 100%;
@@ -392,14 +368,15 @@
         left: 40%;
     }
     .latest-container .latest {
-        grid-template-columns: 5% 90% 5% ;
+        grid-template-columns: 10% 80% 10% ;
         grid-template-rows: 3% 30% 20vh ;
     }
     .latest-container .latest-title {
         margin-bottom: 30px;
     }
     .latest-container .latest-title ::before {
-        left: 42.5%;
+        left: 35%;
+        width: 30%;
     }
     .latest-container .latest-title h2 {
         width: 100%;
